@@ -20,7 +20,7 @@ def new_order():
     return 'OK'
 
 @app.route('/api/order_paid', methods=['GET', 'POST'])
-def new_order():
+def order_paid():
     data = request.json
     receive_url = config.receive_urls['order_paid']
     print(data)
